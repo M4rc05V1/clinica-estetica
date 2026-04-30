@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumière Estética — Beleza, cuidado e sofisticação em cada detalhe. Agende sua consulta." />
+  <title>Lumière Estética — Sua beleza em primeiro lugar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon">✦</div>
+        <div class="logo-text">
+          <span class="logo-name">Lumière</span>
+          <span class="logo-sub">ESTÉTICA</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero"        class="nav-link active">Início</a></li>
+        <li><a href="#servicos"    class="nav-link">Serviços</a></li>
+        <li><a href="#sobre"       class="nav-link">Sobre</a></li>
+        <li><a href="#resultados"  class="nav-link">Resultados</a></li>
+        <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+      </ul>
+
+      <a href="https://wa.me/5515999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação!" target="_blank" class="btn-nav">
+        Agendar avaliação
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-content">
+        <div class="hero-badge">✦ Clínica Premium de Estética</div>
+        <h1>Realce sua<br><em>beleza natural</em><br>com sofisticação.</h1>
+        <p class="hero-desc">
+          Tratamentos personalizados com tecnologia avançada e toque humano.
+          Porque você merece se sentir extraordinária todos os dias.
+        </p>
+        <div class="hero-btns">
+          <a href="https://wa.me/5515999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação!" target="_blank" class="btn-primary">
+            Agendar avaliação gratuita
+          </a>
+          <a href="#servicos" class="btn-text">Ver tratamentos <span>↓</span></a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <strong>+2.000</strong>
+            <span>Clientes satisfeitas</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>8 anos</strong>
+            <span>De experiência</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>98%</strong>
+            <span>Aprovação</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-image-wrap">
+        <div class="hero-image">
+          <!-- Imagem ilustrativa com elementos CSS -->
+          <div class="hero-img-inner">
+            <div class="img-circle c1"></div>
+            <div class="img-circle c2"></div>
+            <div class="img-circle c3"></div>
+            <div class="hero-face">
+              <div class="face-glow"></div>
+              <svg viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg" class="face-svg">
+                <ellipse cx="100" cy="130" rx="72" ry="90" fill="#F5E6D8" opacity="0.6"/>
+                <ellipse cx="100" cy="105" rx="58" ry="72" fill="#EDD5C0" opacity="0.8"/>
+                <ellipse cx="78"  cy="115" rx="8"  ry="5"  fill="#D4A5A5" opacity="0.4"/>
+                <ellipse cx="122" cy="115" rx="8"  ry="5"  fill="#D4A5A5" opacity="0.4"/>
+                <path d="M85 145 Q100 155 115 145" stroke="#C4927A" stroke-width="2" stroke-linecap="round" fill="none"/>
+              </svg>
+            </div>
+            <div class="sparkles">
+              <div class="sparkle s1">✦</div>
+              <div class="sparkle s2">✦</div>
+              <div class="sparkle s3">✧</div>
+              <div class="sparkle s4">✦</div>
+            </div>
+          </div>
+        </div>
+        <div class="float-card fc-rating">
+          <div class="fc-stars">★★★★★</div>
+          <div class="fc-text"><strong>4.9/5</strong><small>+500 avaliações</small></div>
+        </div>
+        <div class="float-card fc-tag">
+          <span class="fc-dot"></span>
+          <span>Avaliação gratuita</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== DIFERENCIAIS ======================== -->
+  <section id="diferenciais">
+    <div class="container">
+      <div class="dif-grid">
+        <div class="dif-item" data-aos>
+          <div class="dif-icon">🌿</div>
+          <h4>Produtos Naturais</h4>
+          <p>Cosméticos premium e cruelty-free selecionados para sua pele.</p>
+        </div>
+        <div class="dif-item" data-aos data-delay="100">
+          <div class="dif-icon">🔬</div>
+          <h4>Tecnologia Avançada</h4>
+          <p>Equipamentos de última geração para resultados reais e duradouros.</p>
+        </div>
+        <div class="dif-item" data-aos data-delay="200">
+          <div class="dif-icon">👩‍⚕️</div>
+          <h4>Equipe Especializada</h4>
+          <p>Profissionais certificadas com anos de experiência em estética.</p>
+        </div>
+        <div class="dif-item" data-aos data-delay="300">
+          <div class="dif-icon">✨</div>
+          <h4>Ambiente Premium</h4>
+          <p>Espaço pensado para seu conforto, relaxamento e bem-estar total.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SERVIÇOS ======================== -->
+  <section id="servicos">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Nossos tratamentos</span>
+        <h2>Cuide-se com quem<br><em>entende de beleza</em></h2>
+        <p>Cada tratamento é pensado para realçar o que há de mais bonito em você.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card featured" data-aos>
+          <div class="sc-tag">Mais popular</div>
+          <div class="sc-icon">🌸</div>
+          <h3>Limpeza de Pele Profunda</h3>
+          <p>Tratamento completo com extração, hidratação e máscara revitalizante. Resultados visíveis desde a primeira sessão.</p>
+          <ul class="sc-list">
+            <li>✓ Análise personalizada da pele</li>
+            <li>✓ Produtos dermocosméticos</li>
+            <li>✓ Alta frequência inclusa</li>
+          </ul>
+          <div class="sc-footer">
+            <div class="sc-price"><small>a partir de</small><strong>R$ 150</strong></div>
+            <a href="https://wa.me/5515999999999?text=Olá!%20Tenho%20interesse%20em%20Limpeza%20de%20Pele!" target="_blank" class="btn-card">Agendar</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos data-delay="80">
+          <div class="sc-icon">💆‍♀️</div>
+          <h3>Drenagem Linfática</h3>
+          <p>Técnica manual especializada que reduz inchaço, melhora a circulação e proporciona profundo relaxamento.</p>
+          <ul class="sc-list">
+            <li>✓ Redução de inchaço</li>
+            <li>✓ Melhora da circulação</li>
+            <li>✓ Relaxamento profundo</li>
+          </ul>
+          <div class="sc-footer">
+            <div class="sc-price"><small>a partir de</small><strong>R$ 120</strong></div>
+            <a href="https://wa.me/5515999999999?text=Olá!%20Tenho%20interesse%20em%20Drenagem%20Linfática!" target="_blank" class="btn-card">Agendar</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos data-delay="160">
+          <div class="sc-icon">⚡</div>
+          <h3>Radiofrequência</h3>
+          <p>Estimula o colágeno e promove o rejuvenescimento da pele com tecnologia de ponta e resultados comprovados.</p>
+          <ul class="sc-list">
+            <li>✓ Firmeza e elasticidade</li>
+            <li>✓ Redução de flacidez</li>
+            <li>✓ Sem tempo de recuperação</li>
+          </ul>
+          <div class="sc-footer">
+            <div class="sc-price"><small>a partir de</small><strong>R$ 200</strong></div>
+            <a href="https://wa.me/5515999999999?text=Olá!%20Tenho%20interesse%20em%20Radiofrequência!" target="_blank" class="btn-card">Agendar</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos data-delay="240">
+          <div class="sc-icon">🌙</div>
+          <h3>Peeling Químico</h3>
+          <p>Renovação celular profunda que trata manchas, cicatrizes e melhora a textura da pele de forma segura.</p>
+          <ul class="sc-list">
+            <li>✓ Clareamento de manchas</li>
+            <li>✓ Textura uniforme</li>
+            <li>✓ Protocolo personalizado</li>
+          </ul>
+          <div class="sc-footer">
+            <div class="sc-price"><small>a partir de</small><strong>R$ 180</strong></div>
+            <a href="https://wa.me/5515999999999?text=Olá!%20Tenho%20interesse%20em%20Peeling%20Químico!" target="_blank" class="btn-card">Agendar</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos data-delay="320">
+          <div class="sc-icon">💎</div>
+          <h3>Microagulhamento</h3>
+          <p>Estimulação de colágeno com micro agulhas que tratam cicatrizes, poros dilatados e rejuvenescem a pele.</p>
+          <ul class="sc-list">
+            <li>✓ Produção de colágeno</li>
+            <li>✓ Poros minimizados</li>
+            <li>✓ Técnica segura e eficaz</li>
+          </ul>
+          <div class="sc-footer">
+            <div class="sc-price"><small>a partir de</small><strong>R$ 250</strong></div>
+            <a href="https://wa.me/5515999999999?text=Olá!%20Tenho%20interesse%20em%20Microagulhamento!" target="_blank" class="btn-card">Agendar</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos data-delay="400">
+          <div class="sc-icon">🌺</div>
+          <h3>Massagem Relaxante</h3>
+          <p>Técnicas orientais e ocidentais combinadas para aliviar tensões, reduzir o estresse e renovar suas energias.</p>
+          <ul class="sc-list">
+            <li>✓ Alívio de tensões</li>
+            <li>✓ Redução do estresse</li>
+            <li>✓ Óleo essencial incluso</li>
+          </ul>
+          <div class="sc-footer">
+            <div class="sc-price"><small>a partir de</small><strong>R$ 100</strong></div>
+            <a href="https://wa.me/5515999999999?text=Olá!%20Tenho%20interesse%20em%20Massagem%20Relaxante!" target="_blank" class="btn-card">Agendar</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SOBRE ======================== -->
+  <section id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-visual" data-aos="fade-right">
+          <div class="sobre-img-wrap">
+            <div class="sobre-img-bg"></div>
+            <div class="sobre-img-card">
+              <div class="sic-decoration">✦</div>
+              <div class="sic-lines">
+                <div class="sic-line long"></div>
+                <div class="sic-line medium"></div>
+                <div class="sic-line short"></div>
+              </div>
+              <div class="sic-badge">
+                <span>🏆</span>
+                <div>
+                  <strong>Clínica Certificada</strong>
+                  <small>ANVISA & CRF</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-content" data-aos="fade-left">
+          <span class="section-tag">Sobre a Lumière</span>
+          <h2>Uma clínica criada<br><em>por amor à beleza</em></h2>
+          <p>Fundada há 8 anos, a Lumière Estética nasceu com um propósito claro: oferecer tratamentos de alto padrão que vão além da aparência — que transformam a autoestima e o bem-estar de cada cliente.</p>
+          <p>Nossa equipe é formada por profissionais especializadas, apaixonadas pelo que fazem e sempre atualizadas com as últimas tendências e técnicas do mercado estético.</p>
+          <div class="sobre-nums">
+            <div class="sn-item">
+              <strong class="counter" data-target="2000">0</strong><span>+</span>
+              <small>Clientes atendidas</small>
+            </div>
+            <div class="sn-item">
+              <strong class="counter" data-target="8">0</strong><span> anos</span>
+              <small>No mercado</small>
+            </div>
+            <div class="sn-item">
+              <strong class="counter" data-target="15">0</strong><span>+</span>
+              <small>Tratamentos</small>
+            </div>
+          </div>
+          <a href="https://wa.me/5515999999999?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20Lumière!" target="_blank" class="btn-primary">
+            Conhecer a clínica
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== RESULTADOS ======================== -->
+  <section id="resultados">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Resultados reais</span>
+        <h2>Transformações que<br><em>falam por si</em></h2>
+        <p>Veja os resultados alcançados pelas nossas clientes com dedicação e os melhores tratamentos.</p>
+      </div>
+
+      <div class="results-grid">
+        <div class="result-card" data-aos>
+          <div class="rc-before-after">
+            <div class="rc-side before">
+              <div class="rc-img ri1-before"></div>
+              <span class="rc-label">Antes</span>
+            </div>
+            <div class="rc-divider">
+              <div class="rc-divider-line"></div>
+              <div class="rc-divider-icon">⟷</div>
+            </div>
+            <div class="rc-side after">
+              <div class="rc-img ri1-after"></div>
+              <span class="rc-label after-label">Depois</span>
+            </div>
+          </div>
+          <div class="rc-info">
+            <h4>Limpeza de Pele</h4>
+            <p>4 sessões · Pele visivelmente mais luminosa</p>
+          </div>
+        </div>
+
+        <div class="result-card" data-aos data-delay="100">
+          <div class="rc-before-after">
+            <div class="rc-side before">
+              <div class="rc-img ri2-before"></div>
+              <span class="rc-label">Antes</span>
+            </div>
+            <div class="rc-divider">
+              <div class="rc-divider-line"></div>
+              <div class="rc-divider-icon">⟷</div>
+            </div>
+            <div class="rc-side after">
+              <div class="rc-img ri2-after"></div>
+              <span class="rc-label after-label">Depois</span>
+            </div>
+          </div>
+          <div class="rc-info">
+            <h4>Radiofrequência</h4>
+            <p>6 sessões · Firmeza e rejuvenescimento</p>
+          </div>
+        </div>
+
+        <div class="result-card" data-aos data-delay="200">
+          <div class="rc-before-after">
+            <div class="rc-side before">
+              <div class="rc-img ri3-before"></div>
+              <span class="rc-label">Antes</span>
+            </div>
+            <div class="rc-divider">
+              <div class="rc-divider-line"></div>
+              <div class="rc-divider-icon">⟷</div>
+            </div>
+            <div class="rc-side after">
+              <div class="rc-img ri3-after"></div>
+              <span class="rc-label after-label">Depois</span>
+            </div>
+          </div>
+          <div class="rc-info">
+            <h4>Peeling Químico</h4>
+            <p>3 sessões · Manchas reduzidas em 80%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== DEPOIMENTOS ======================== -->
+  <section id="depoimentos">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <span class="section-tag">Depoimentos</span>
+        <h2>O que nossas clientes<br><em>dizem sobre nós</em></h2>
+      </div>
+
+      <div class="dep-grid">
+        <div class="dep-card" data-aos>
+          <div class="dep-quote">"</div>
+          <p>"Nunca me senti tão bem com minha pele! A equipe da Lumière é incrível, atenciosa e os resultados superaram todas as minhas expectativas."</p>
+          <div class="dep-author">
+            <div class="dep-avatar" style="background: linear-gradient(135deg, #E8B4B8, #C9A0A0)">JM</div>
+            <div>
+              <strong>Julia Martins</strong>
+              <small>★★★★★ · Cliente há 2 anos</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="dep-card featured" data-aos data-delay="100">
+          <div class="dep-quote">"</div>
+          <p>"Fiz a drenagem linfática e a radiofrequência. Resultado incrível! O ambiente é lindo, a atendimento é impecável. Me sinto renovada a cada visita."</p>
+          <div class="dep-author">
+            <div class="dep-avatar" style="background: linear-gradient(135deg, #B8D4E8, #90B8C9)">CS</div>
+            <div>
+              <strong>Camila Souza</strong>
+              <small>★★★★★ · Cliente há 3 anos</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="dep-card" data-aos data-delay="200">
+          <div class="dep-quote">"</div>
+          <p>"O peeling químico transformou minha pele! As manchas que eu tinha há anos diminuíram muito. Super indico a Lumière para todas as amigas."</p>
+          <div class="dep-author">
+            <div class="dep-avatar" style="background: linear-gradient(135deg, #D4E8B8, #A0C990)">AP</div>
+            <div>
+              <strong>Ana Paula</strong>
+              <small>★★★★★ · Cliente há 1 ano</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avaliação geral -->
+      <div class="rating-bar" data-aos>
+        <div class="rb-stars">★★★★★</div>
+        <div class="rb-score">4.9</div>
+        <div class="rb-text">Média de avaliações · <strong>+500 clientes avaliaram</strong></div>
+        <div class="rb-logos">
+          <span>Google</span>
+          <span>Instagram</span>
+          <span>Facebook</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA FINAL ======================== -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-content" data-aos>
+        <div class="cta-decoration">✦</div>
+        <span class="section-tag">Comece sua transformação</span>
+        <h2>Agende sua <em>avaliação gratuita</em><br>hoje mesmo</h2>
+        <p>Dê o primeiro passo para uma versão mais bonita e confiante de você. Nossa equipe está pronta para te atender.</p>
+        <div class="cta-btns">
+          <a href="https://wa.me/5515999999999?text=Olá!%20Gostaria%20de%20agendar%20minha%20avaliação%20gratuita!" target="_blank" class="btn-primary large">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <div class="cta-info">
+            <span>📍 Rua das Flores, 123 — Centro</span>
+            <span>🕐 Seg–Sáb · 9h às 19h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-icon">✦</div>
+            <div class="logo-text">
+              <span class="logo-name">Lumière</span>
+              <span class="logo-sub">ESTÉTICA</span>
+            </div>
+          </div>
+          <p>Beleza, cuidado e sofisticação em cada detalhe. Sua transformação começa aqui.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Tratamentos</h5>
+          <a href="#servicos">Limpeza de Pele</a>
+          <a href="#servicos">Drenagem Linfática</a>
+          <a href="#servicos">Radiofrequência</a>
+          <a href="#servicos">Peeling Químico</a>
+        </div>
+        <div class="footer-col">
+          <h5>Clínica</h5>
+          <a href="#sobre">Sobre nós</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#resultados">Resultados</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contato</h5>
+          <a href="https://wa.me/5515999999999" target="_blank">WhatsApp</a>
+          <a href="https://instagram.com/lumierestetica" target="_blank">Instagram</a>
+          <p class="footer-address">Rua das Flores, 123<br>Centro — Tatuí/SP</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Lumière Estética — Todos os direitos reservados</p>
+        <p class="footer-credit">Site criado por <strong>MV Sites</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5515999999999?text=Olá!%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avaliação!" target="_blank" class="whatsapp-float" id="wppFloat" aria-label="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
